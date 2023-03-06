@@ -1,9 +1,9 @@
 package CrockeryFactory;
-public abstract class CrockeryFactory {
-  Crockery makeCrockery() {
+abstract class CrockeryFactory {
+  public Crockery makeCrockery() {
     Crockery crockery = createCrockery();
     return crockery;
-}
+    }
 
-abstract Crockery createCrockery();
+    abstract Crockery createCrockery();
 }

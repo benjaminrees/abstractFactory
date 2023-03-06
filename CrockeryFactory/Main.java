@@ -35,12 +35,12 @@ class Vendor {
 
 }
   
-  abstract class Crockery {
+  interface Crockery {
        abstract String getType();
   }
 
-  class Plate extends Crockery {
-    String getType() {
+  class Plate implements Crockery {
+    public String getType() {
         return "Plate";
     }
   
@@ -53,8 +53,8 @@ class Vendor {
     }
   }
 
-  class Knife extends Crockery {
-    String getType() {
+  class Knife implements Crockery {
+    public String getType() {
         return "Knife";
     }
   
@@ -67,8 +67,8 @@ class Vendor {
     }
   }
 
-  class Fork extends Crockery {
-    String getType() {
+  class Fork implements Crockery {
+    public String getType() {
         return "Fork";
     }
   

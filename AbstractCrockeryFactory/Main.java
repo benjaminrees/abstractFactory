@@ -45,30 +45,30 @@ abstract interface Fork {
   public String getType();
 }
 
-class StandardCrockeryFactory extends AbstractCrockeryFactory {
-  Plate makePlate(){
+class StandardCrockeryFactory implements AbstractCrockeryFactory {
+  public Plate makePlate(){
     return new StandardPlate();
   }
 
-  Knife makeKnife(){
+  public Knife makeKnife(){
     return new StandardKnife();
   }
 
-  Fork makeFork(){
+  public Fork makeFork(){
     return new StandardFork();
   }
 }
 
-class LuxuryCrockeryFactory extends AbstractCrockeryFactory {
-  Plate makePlate(){
+class LuxuryCrockeryFactory implements AbstractCrockeryFactory {
+  public Plate makePlate(){
     return new LuxuryPlate();
   }
 
-  Knife makeKnife(){
+  public Knife makeKnife(){
     return new LuxuryKnife();
   }
 
-  Fork makeFork(){
+  public Fork makeFork(){
     return new LuxuryFork();
   }
 }
